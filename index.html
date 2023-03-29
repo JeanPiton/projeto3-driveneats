@@ -22,28 +22,37 @@
         <div class="menu">
             <p>Primeiro, seu prato</p>
             <div class="areaEscolha">
-                <div class="opcao">
+                <div onclick="select(this)" class="opcao prato">
                     <img src="imagens/frango_yin_yang.png">
                     <div class="texto">
                         <p class="titulo">Frango Yin Yang</p>
                         <p class="desc">Um pouco de batata, um pouco de salada</p>
-                        <p class="preco">R$ 14,90</p>
+                        <div>
+                            <p class="preco">R$ 14,90</p>
+                            <ion-icon name="checkmark-circle"></ion-icon>
+                        </div>
                     </div>
                 </div>
-                <div class="opcao">
+                <div onclick="select(this)" class="opcao prato">
                     <img src="imagens/frango_yin_yang.png">
                     <div class="texto">
                         <p class="titulo">Frango Yin Yang</p>
                         <p class="desc">Um pouco de batata, um pouco de salada</p>
-                        <p class="preco">R$ 14,90</p>
+                        <div>
+                            <p class="preco">R$ 14,90</p>
+                            <ion-icon name="checkmark-circle"></ion-icon>
+                        </div>
                     </div>
                 </div>
-                <div class="opcao">
+                <div onclick="select(this)" class="opcao prato">
                     <img src="imagens/frango_yin_yang.png">
                     <div class="texto">
                         <p class="titulo">Frango Yin Yang</p>
                         <p class="desc">Um pouco de batata, um pouco de salada</p>
-                        <p class="preco">R$ 14,90</p>
+                        <div>
+                            <p class="preco">R$ 14,90</p>
+                            <ion-icon name="checkmark-circle"></ion-icon>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -51,28 +60,37 @@
         <div class="menu">
             <p>Agora, sua bebida</p>
             <div class="areaEscolha">
-                <div class="opcao">
+                <div onclick="select(this)" class="opcao bebida">
                     <img src="imagens/coca-cola.png">
                     <div class="texto">
                         <p class="titulo">Coquinha gelada</p>
                         <p class="desc">Lata 350ml</p>
-                        <p class="preco">R$ 4,90</p>
+                        <div>
+                            <p class="preco">R$ 4,90</p>
+                            <ion-icon name="checkmark-circle"></ion-icon>
+                        </div>
                     </div>
                 </div>
-                <div class="opcao">
+                <div onclick="select(this)" class="opcao bebida">
                     <img src="imagens/coca-cola.png">
                     <div class="texto">
                         <p class="titulo">Coquinha gelada</p>
                         <p class="desc">Lata 350ml</p>
-                        <p class="preco">R$ 4,90</p>
+                        <div>
+                            <p class="preco">R$ 4,90</p>
+                            <ion-icon name="checkmark-circle"></ion-icon>
+                        </div>
                     </div>
                 </div>
-                <div class="opcao">
+                <div onclick="select(this)" class="opcao bebida">
                     <img src="imagens/coca-cola.png">
                     <div class="texto">
                         <p class="titulo">Coquinha gelada</p>
                         <p class="desc">Lata 350ml</p>
-                        <p class="preco">R$ 4,90</p>
+                        <div>
+                            <p class="preco">R$ 4,90</p>
+                            <ion-icon name="checkmark-circle"></ion-icon>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -80,28 +98,37 @@
         <div class="menu">
             <p>Por fim, sua sobremesa</p>
             <div class="areaEscolha">
-                <div class="opcao">
+                <div onclick="select(this)" class="opcao sobremesa">
                     <img src="imagens/pudim.png">
                     <div class="texto">
                         <p class="titulo">Pudim</p>
                         <p class="desc">Apenas pudim</p>
-                        <p class="preco">R$ 7,90</p>
+                        <div>
+                            <p class="preco">R$ 7,90</p>
+                            <ion-icon name="checkmark-circle"></ion-icon>
+                        </div>
                     </div>
                 </div>
-                <div class="opcao">
+                <div onclick="select(this)" class="opcao sobremesa">
                     <img src="imagens/pudim.png">
                     <div class="texto">
                         <p class="titulo">Pudim</p>
                         <p class="desc">Apenas pudim</p>
-                        <p class="preco">RR$ 7,90</p>
+                        <div>
+                            <p class="preco">R$ 7,90</p>
+                            <ion-icon name="checkmark-circle"></ion-icon>
+                        </div>
                     </div>
                 </div>
-                <div class="opcao">
+                <div onclick="select(this)" class="opcao sobremesa">
                     <img src="imagens/pudim.png">
                     <div class="texto">
                         <p class="titulo">Pudim</p>
                         <p class="desc">Apenas pudim</p>
-                        <p class="preco">R$ 7,90</p>
+                        <div>
+                            <p class="preco">R$ 7,90</p>
+                            <ion-icon name="checkmark-circle"></ion-icon>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -109,12 +136,13 @@
     </div>
 
     <div class="base">
-        <button onclick="button()" disabled>
+        <button id="finalizar" onclick="button()" disabled>
             Selecionar os 3 itens para fechar o pedido
         </button>
     </div>
 
     <script src="js/script.js"></script>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
 </body>
 
 </html>
