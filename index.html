@@ -142,7 +142,7 @@
     </div>
 
     <div class="final">
-        <div class="areaConfirm">
+        <div class="areaConfirm" data-test="confirm-order-modal">
             <p>Confirme seu pedido</p>
             <div class="regPedido">
                 <div class="pedidoCusto">
@@ -163,8 +163,8 @@
                 <p id="total">R$</p>
             </div>
             <div>
-                <button class="confirm" onclick="confirmar()">Tudo certo, pode pedir</button>
-                <button class="cancel" onclick="cancelar()">Cancelar</button>
+                <button class="confirm" onclick="confirmar()" data-test="confirm-order-btn">Tudo certo, pode pedir</button>
+                <button class="cancel" onclick="cancelar()" data-test="cancel-order-btn">Cancelar</button>
             </div>
         </div>
     </div>
