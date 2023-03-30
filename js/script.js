@@ -21,9 +21,9 @@ function select(element) {
 }
 function button() {
     const res = (prato[1] + bebida[1] + sobremesa[1]).toFixed(2);
-    let pedido = "Olá, gostaria de fazer o pedido: - Prato: " + prato[0] + " - Bebida: " + bebida[0] + " - Sobremesa: " + sobremesa[0] + " Total: R$ " + res;
-    encodeURIComponent(pedido);
-    location.href = 'https://wa.me/?text=' + pedido;
+    let pedido = "Olá, gostaria de fazer o pedido:\r\n- Prato: " + prato[0] + "\r\n- Bebida: " + bebida[0] + "\r\n- Sobremesa: " + sobremesa[0] + "\r\nTotal: R$ " + res;
+    pedido = encodeURIComponent(pedido);
+    location.href = 'https://wa.me/+5519999869449?text=' + pedido;
 }
 function verifica() {
     if (prato && bebida && sobremesa) {
