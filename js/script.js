@@ -1,4 +1,4 @@
-let prato=false, bebida=false, sobremesa=false;
+let prato, bebida, sobremesa;
 let test=0;
 function select(element) {
     const collection = document.getElementsByClassName(element.className);
@@ -11,16 +11,20 @@ function select(element) {
     const icone = element.getElementsByTagName("ion-icon");
     icone[0].style.color="#32B72F";
     if(element.className == "opcao prato"){
-        prato=true;
+        prato=[element.getAttribute("data-nome"),+element.getAttribute("data-preco")];
     }if(element.className == "opcao bebida"){
-        bebida=true;
+        bebida=[element.getAttribute("data-nome"),+element.getAttribute("data-preco")];
     }if(element.className == "opcao sobremesa"){
-        sobremesa=true;
+        sobremesa=[element.getAttribute("data-nome"),+element.getAttribute("data-preco")];
     }
     verifica();
 }
 function button() {
-    alert("oi");
+    const res = (prato[1]+bebida[1]+sobremesa[1]).toFixed(2);
+    alert(res);
+    let pedido = "Olá, gostaria de fazer o pedido: - Prato: "+prato[0]+" - Bebida: "+bebida[0]+" - Sobremesa: "+sobremesa[0]+" Total: R$ "+res;
+    encodeURIComponent(pedido);
+    location.href = 'https://wa.me/?text='+pedido;
 }
 function verifica(){
     if(prato && bebida && sobremesa){
